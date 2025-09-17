@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Circuito Lúdico-Neuromotriz – Psicomotricidad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light" />
+  <style>
+    .card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+    .card-hover:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.06); }
+    .soft-scroll { scroll-behavior: smooth; }
+    .subtle-bg {
+      background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.04) 1px, transparent 0);
+      background-size: 12px 12px;
+    }
+  </style>
+</head>
+<body class="soft-scroll min-h-screen bg-white text-slate-800 selection:bg-sky-100 selection:text-slate-900" style="font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+  <div class="relative">
+    <!-- Encabezado -->
+    <header class="relative mx-auto max-w-7xl px-6 pt-8 pb-4">
+      <div class="rounded-2xl ring-2 ring-black bg-white p-5 md:p-6 shadow-sm">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div class="flex items-start gap-4">
+            <img src="https://www.carreras.pe/userfiles/images/Logos%20y%20fachadas/Logo%20UTP%202.png" alt="Logo UTP" class="w-20 h-20 md:w-24 md:h-24 object-contain" onerror="this.src=''; this.alt='Image failed to load'; this.style.display='none';">
+            <div>
+              <h2 class="text-xl font-bold text-gray-800">Universidad Tecnológica del Perú</h2>
+              <p class="text-gray-600">Facultad de Educación</p>
+              <p class="text-sm text-gray-500">Práctica Educativa I: Psicomotricidad para Educación Primaria</p>
+              <p class="text-xs text-gray-400">Sección 31960</p>
+            </div>
+          </div>
+          <div class="text-left md:text-right">
+            <p class="text-lg font-semibold text-gray-800">Aaron Sixto Callupe Llallico</p>
+            <p class="text-gray-600">Estudiante de Educación Primaria</p>
+            <p class="text-gray-600">Semana 6 - Actividad 2</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-900">
+          Circuito Lúdico‑Neuromotriz
+        </h1>
+        <p class="mt-2 text-lg sm:text-xl font-medium text-slate-700">Psicomotricidad</p>
+      </div>
+    </header>
+
+    <!-- Contenido principal (más ancho, simulación sin cambios de tamaño) -->
+    <main class="relative mx-auto max-w-7xl px-6 pb-12">
+      <section class="mb-8">
+        <article id="circuitCard" role="button" tabindex="0" class="card-hover cursor-pointer focus:outline-none focus:ring-2 focus:ring-slate-400/70 rounded-2xl bg-white ring-2 ring-black p-7 md:p-8 subtle-bg">
+          <div class="mx-auto max-w-3xl">
+            <h3 class="text-2xl sm:text-3xl font-semibold leading-snug text-slate-900 text-center">
+              Circuito completo con 5 estaciones
+            </h3>
+
+            <!-- Fila superior: 1, 2, 3 -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="rounded-xl bg-white ring-1 ring-slate-200 p-4">
+                <h4 class="font-semibold text-slate-900">1 · Aros</h4>
+                <ul class="mt-2 text-sm text-slate-700 space-y-1.5">
+                  <li>Inicio en bandera verde, pasa por el centro de los 4 aros y termina en la roja.</li>
+                  <li>Éxito: recorrido continuo y claro por los 4 aros.</li>
+                  <li>Dificultad: leve desvío entre aro 2 y 3, pero completa los 4 aros.</li>
+                </ul>
+              </div>
+              <div class="rounded-xl bg-white ring-1 ring-slate-200 p-4">
+                <h4 class="font-semibold text-slate-900">2 · Lanzamiento</h4>
+                <ul class="mt-2 text-sm text-slate-700 space-y-1.5">
+                  <li>Desde la marca, lanza 3 pelotas hacia la caja objetivo.</li>
+                  <li>Éxito: las 3 pelotas entran.</li>
+                  <li>Dificultad: 1 fuera, 2 dentro; muestra apoyo sugerido.</li>
+                </ul>
+              </div>
+              <div class="rounded-xl bg-white ring-1 ring-slate-200 p-4">
+                <h4 class="font-semibold text-slate-900">3 · Línea </h4>
+                <ul class="mt-2 text-sm text-slate-700 space-y-1.5">
+                  <li>Avanza desde la bandera verde a la roja por una línea recta.</li>
+                  <li>Éxito: desplazamiento estable.</li>
+                  <li>Dificultad: ligera inestabilidad, pero llega a la meta.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Fila inferior centrada: 4, 5 -->
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:max-w-3xl md:mx-auto">
+              <div class="rounded-xl bg-white ring-1 ring-slate-200 p-4">
+                <h4 class="font-semibold text-slate-900">4 · Conos</h4>
+                <ul class="mt-2 text-sm text-slate-700 space-y-1.5">
+                  <li>Zigzag pasando por cada cono, de inicio a meta.</li>
+                  <li>Éxito: recorre los 5 conos y termina.</li>
+                  <li>Dificultad: leve vibración cerca del 3º, completa igual.</li>
+                </ul>
+              </div>
+              <div class="rounded-xl bg-white ring-1 ring-slate-200 p-4">
+                <h4 class="font-semibold text-slate-900">5 · Palmas</h4>
+                <ul class="mt-2 text-sm text-slate-700 space-y-1.5">
+                  <li>Ejercicio de palmas en pareja en el centro del escenario.</li>
+                  <li>Éxito: palmadas sincronizadas.</li>
+                  <li>Dificultad: desincronización leve; se sugiere apoyo.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <!--<button class="inline-flex items-center gap-2 rounded-xl bg-slate-800 hover:bg-red-600 text-white px-5 py-3 font-medium shadow-sm">
+                Abrir simulación
+              </button>-->
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Conclusión -->
+      <section class="mt-10">
+        <article class="rounded-2xl bg-white ring-2 ring-black p-6 md:p-7">
+          <div class="flex items-start gap-3">
+            <div class="w-12 h-12 shrink-0 rounded-xl bg-black flex items-center justify-center ring-2 ring-black">
+              <svg viewBox="0 0 24 24" fill="none" class="w-7 h-7 text-white">
+                <path d="M20 7l-8 10-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold text-slate-900">Conclusión</h4>
+              <p class="mt-2 text-slate-700 leading-relaxed">
+                Esta actividad fortalece la psicomotricidad al integrar coordinación, equilibrio, orientación espacial, ritmo y control postural mediante tareas lúdicas y progresivas. En todo el recorrido se desarrollan la planificación motora, la lateralidad, la precisión y tanto la motricidad fina como la gruesa. El docente, al observar, retroalimentar y adaptar la dificultad, favorece la participación, la autorregulación y la confianza, permitiendo reintentos exitosos y consolidando los aprendizajes motores.
+              </p>
+              <!--<p class="mt-3 text-slate-700 leading-relaxed">
+                El rol del docente es clave, por que observa, brinda retroalimentación inmediata y adapta la dificultad según la necesidad del estudiante (por ejemplo, guiando el ritmo en palmas, separando más los conos o acercando la caja de lanzamiento). Esto favorece la participación, la autorregulación y la confianza, ofreciendo apoyos puntuales que permiten reintentar con éxito y consolidar los aprendizajes motores.
+              </p>-->
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Modal Simulación (proporción original) -->
+    <div id="simModal" class="fixed inset-0 z-50 hidden">
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative mx-auto mt-6 w-[96vw] max-w-[1100px] rounded-2xl bg-white ring-2 ring-black p-0 overflow-hidden shadow-2xl">
+        <!-- Header -->
+        <div class="flex items-center justify-between px-5 py-4 bg-black text-white border-b border-black">
+          <div class="flex items-center gap-3">
+            <h3 class="text-lg font-semibold">Simulación · Circuito</h3>
+            <span id="stageBadge" class="text-xs px-2 py-1 rounded-full bg-red-600 text-white hidden"></span>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="btnClose" class="rounded-lg px-3 py-1.5 text-sm bg-slate-700 hover:bg-red-600 border border-slate-600 text-white">✕ Cerrar</button>
+          </div>
+        </div>
+
+        <!-- Avisos -->
+        <div id="successBar" class="hidden px-5 py-2 bg-emerald-500 text-white text-sm">
+          <span id="successMsg">Éxito · Estación completada</span>
+        </div>
+        <div id="diffBar" class="hidden px-5 py-2 bg-red-600 text-white text-sm flex items-center justify-between">
+          <span id="diffMsg">Dificultad · Apoyo docente: <span id="supportText" class="font-semibold"></span></span>
+          <button id="applySupport" class="ml-4 rounded-lg px-3 py-1.5 text-xs bg-white/10 hover:bg-white/20 border border-white/20">Aplicar apoyo y reintentar</button>
+        </div>
+
+        <!-- Controles centrados y proporcionales -->
+        <div class="relative bg-white text-slate-900">
+          <!-- Aros -->
+          <div class="absolute left-[26%] top-[9%] -translate-x-1/2 rounded-xl bg-white ring-1 ring-black px-3 py-2 text-xs flex items-center gap-2 whitespace-nowrap shadow-sm">
+            <span class="font-semibold">Aros</span>
+            <button class="qBtn success px-3 py-1.5 rounded-lg bg-black text-white hover:bg-red-600 border border-black" data-stage="1">Éxito</button>
+            <button class="qBtn diff px-3 py-1.5 rounded-lg bg-white text-black hover:bg-red-50 border border-black" data-stage="1">Dificultad</button>
+          </div>
+          <!-- Lanzamiento -->
+          <div class="absolute left-[74%] top-[9%] -translate-x-1/2 rounded-xl bg-white ring-1 ring-black px-3 py-2 text-xs flex items-center gap-2 whitespace-nowrap shadow-sm">
+            <span class="font-semibold">Lanzamiento</span>
+            <button class="qBtn success px-3 py-1.5 rounded-lg bg-black text-white hover:bg-red-600 border border-black" data-stage="2">Éxito</button>
+            <button class="qBtn diff px-3 py-1.5 rounded-lg bg-white text-black hover:bg-red-50 border border-black" data-stage="2">Dificultad</button>
+          </div>
+          <!-- Conos -->
+          <div class="absolute left-[26%] top-[54%] -translate-x-1/2 rounded-xl bg-white ring-1 ring-black px-3 py-2 text-xs flex items-center gap-2 whitespace-nowrap shadow-sm">
+            <span class="font-semibold">Conos</span>
+            <button class="qBtn success px-3 py-1.5 rounded-lg bg-black text-white hover:bg-red-600 border border-black" data-stage="4">Éxito</button>
+            <button class="qBtn diff px-3 py-1.5 rounded-lg bg-white text-black hover:bg-red-50 border border-black" data-stage="4">Dificultad</button>
+          </div>
+          <!-- Línea -->
+          <div class="absolute left-[74%] top-[54%] -translate-x-1/2 rounded-xl bg-white ring-1 ring-slate-700 px-3 py-2 text-xs flex items-center gap-2 whitespace-nowrap shadow-sm">
+            <span class="font-semibold">Línea</span>
+            <button class="qBtn success px-3 py-1.5 rounded-lg bg-black text-white hover:bg-red-600 border border-black" data-stage="3">Éxito</button>
+            <button class="qBtn diff px-3 py-1.5 rounded-lg bg-white text-black hover:bg-red-50 border border-black" data-stage="3">Dificultad</button>
+          </div>
+          <!-- Palmas (centrado mejor) -->
+          <div class="absolute left-1/2 top-[41%] -translate-x-1/2 rounded-xl bg-white ring-1 ring-black px-3 py-2 text-xs flex items-center gap-2 whitespace-nowrap shadow-sm">
+            <span class="font-semibold">Palmas</span>
+            <button class="qBtn success px-3 py-1.5 rounded-lg bg-black text-white hover:bg-red-600 border border-black" data-stage="5">Éxito</button>
+            <button class="qBtn diff px-3 py-1.5 rounded-lg bg-white text-black hover:bg-red-50 border border-black" data-stage="5">Dificultad</button>
+          </div>
+
+          <!-- Lienzo de simulación (proporción original) -->
+          <svg id="simCanvas" viewBox="0 0 1000 700" class="block w-full h-[640px]"></svg>
+
+          <!-- Avisos -->
+          <div id="toast" class="hidden"></div>
+        </div>
+
+        <div class="px-5 py-3 text-xs text-slate-600 bg-white border-t border-black/10">
+          Inicia cada estación desde su encabezado.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lógica de simulación -->
+  <script>
+    // Abrir / cerrar modal
+    const circuitCard = document.getElementById('circuitCard');
+    const simModal = document.getElementById('simModal');
+    const btnClose = document.getElementById('btnClose');
+    const stageBadge = document.getElementById('stageBadge');
+
+    circuitCard.addEventListener('click', openModal);
+    circuitCard.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') openModal(); });
+    function openModal() {
+      simModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      setupScene(true);
+    }
+    function closeModal() {
+      stopAnim();
+      simModal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+    btnClose?.addEventListener('click', closeModal);
+    simModal?.addEventListener('click', (e) => { if (e.target === simModal) closeModal(); });
+
+    // ====== SIMULACIÓN ======
+    const NS = 'http://www.w3.org/2000/svg';
+    const simCanvas = document.getElementById('simCanvas');
+    let rafId = null, station = 0, mode = 'idle';
+    let runner, figL, figR, handL, handR, footMark, cone2G;
+    let coneFallen = false;
+    let balls = [];
+    const toast = document.getElementById('toast');
+    const applySupport = document.getElementById('applySupport');
+    const diffBar = document.getElementById('diffBar');
+
+    const supports = {
+      1: 'Usar aros de colores y bajar el ritmo.',
+      2: 'Acercar la caja o ampliar su tamaño.',
+      3: 'Abrir brazos y avanzar más despacio.',
+      4: 'Separar más los conos.',
+      5: 'Iniciar el patrón de palmas más despacio.'
+    };
+
+    function stopAnim(){ if (rafId) cancelAnimationFrame(rafId); rafId = null; }
+
+    function setupScene(reset=false) {
+      stopAnim(); station = 0; mode = 'idle';
+      path = []; idx = 0; px = 0; py = 0; throwT = 0; palmsT = 0; routeInit = false;
+      if (stageBadge) { stageBadge.textContent = ''; stageBadge.classList.add('hidden'); }
+      document.getElementById('successBar')?.classList.add('hidden');
+      diffBar?.classList.add('hidden');
+      if (!reset) return;
+
+      simCanvas.innerHTML = '';
+
+      // Fondo
+      const defs = document.createElementNS(NS, 'defs');
+      const grad = document.createElementNS(NS, 'linearGradient');
+      grad.setAttribute('id','bgGrad');
+      grad.setAttribute('x1','0%'); grad.setAttribute('y1','0%');
+      grad.setAttribute('x2','0%'); grad.setAttribute('y2','100%');
+      const s1 = document.createElementNS(NS,'stop'); s1.setAttribute('offset','0%'); s1.setAttribute('stop-color','#ffffff');
+      const s2 = document.createElementNS(NS,'stop'); s2.setAttribute('offset','100%'); s2.setAttribute('stop-color','#f5f5f5');
+      grad.appendChild(s1); grad.appendChild(s2); defs.appendChild(grad); simCanvas.appendChild(defs);
+      const bg = document.createElementNS(NS, 'rect');
+      bg.setAttribute('x','0'); bg.setAttribute('y','0'); bg.setAttribute('width','1000'); bg.setAttribute('height','700'); bg.setAttribute('fill','url(#bgGrad)');
+      simCanvas.appendChild(bg);
+
+      // AROS (4)
+      const hoops = [ {cx:150,cy:160},{cx:220,cy:230},{cx:290,cy:160},{cx:360,cy:230} ];
+      hoops.forEach((h,i)=>{
+        const c = document.createElementNS(NS,'circle');
+        c.setAttribute('cx',h.cx); c.setAttribute('cy',h.cy); c.setAttribute('r','26');
+        c.setAttribute('fill','none'); c.setAttribute('stroke', i%2? '#111111':'#262626'); c.setAttribute('stroke-width','6');
+        simCanvas.appendChild(c);
+      });
+      flag(110, 160, '#10b981'); // inicio Aros (verde)
+      flag(400, 230, '#ef4444'); // fin Aros (rojo)
+
+      // LANZAMIENTO
+      const box = document.createElementNS(NS,'rect');
+      box.setAttribute('x','810'); box.setAttribute('y','150');
+      box.setAttribute('width','80'); box.setAttribute('height','80');
+      box.setAttribute('fill','none'); box.setAttribute('stroke','#111111'); box.setAttribute('stroke-width','5');
+      simCanvas.appendChild(box);
+      const throwMark = document.createElementNS(NS,'circle');
+      throwMark.setAttribute('cx','650'); throwMark.setAttribute('cy','200'); throwMark.setAttribute('r','10');
+      throwMark.setAttribute('fill','#ef4444'); simCanvas.appendChild(throwMark);
+
+      // LÍNEA
+      const line = document.createElementNS(NS,'line');
+      line.setAttribute('x1','880'); line.setAttribute('y1','560'); line.setAttribute('x2','620'); line.setAttribute('y2','560');
+      line.setAttribute('stroke','#111111'); line.setAttribute('stroke-width','6'); simCanvas.appendChild(line);
+      flag(890, 560, '#10b981'); // inicio (verde)
+      flag(610, 560, '#ef4444'); // fin rojo
+
+      // CONOS (5)
+      const cones = [ {x:380,y:560},{x:320,y:490},{x:260,y:560},{x:200,y:490},{x:140,y:540} ];
+      cones.forEach(({x,y},i)=>{
+        const g = document.createElementNS(NS,'g');
+        g.setAttribute('transform', `translate(${x},${y})`);
+        const tri = document.createElementNS(NS,'polygon');
+        tri.setAttribute('points', `-16,26 0,-16 16,26`);
+        tri.setAttribute('fill','#ffffff'); tri.setAttribute('stroke','#111111'); tri.setAttribute('stroke-width','3');
+        g.appendChild(tri);
+        if (i===1) { g.setAttribute('id','cone2'); cone2G = g; }
+        simCanvas.appendChild(g);
+      });
+      flag(400, 540, '#10b981'); // inicio (verde)
+      flag(120, 540, '#ef4444');
+
+      // PALMAS (centro mejor visible)
+      figL = createFigure(470, 370, '#0ea5e9'); simCanvas.appendChild(figL);
+      figR = createFigure(530, 370, '#0ea5e9'); simCanvas.appendChild(figR);
+      handL = circle( -100, -100, 7, '#0ea5e9'); simCanvas.appendChild(handL);
+      handR = circle( -100, -100, 7, '#0ea5e9'); simCanvas.appendChild(handR);
+
+      // Corredor y 3 pelotas
+      runner = createFigure(120, 160, '#0ea5e9'); simCanvas.appendChild(runner);
+      balls = [ circle(-50,-50,7,'#ef4444'), circle(-50,-50,7,'#ef4444'), circle(-50,-50,7,'#ef4444') ];
+      balls.forEach(b=> simCanvas.appendChild(b));
+
+      // Marca de pisada fuera (aros dificultad)
+      footMark = document.createElementNS(NS,'circle');
+      footMark.setAttribute('cx','-100'); footMark.setAttribute('cy','-100'); footMark.setAttribute('r','6');
+      footMark.setAttribute('fill','transparent'); footMark.setAttribute('stroke','#ef4444'); footMark.setAttribute('stroke-width','3');
+      footMark.setAttribute('opacity','0'); simCanvas.appendChild(footMark);
+    }
+
+    function flag(x, y, color) {
+      const g = document.createElementNS(NS,'g'); g.setAttribute('transform', `translate(${x},${y})`);
+      const pole = document.createElementNS(NS,'line'); pole.setAttribute('x1','0'); pole.setAttribute('y1','0'); pole.setAttribute('x2','0'); pole.setAttribute('y2','-22');
+      pole.setAttribute('stroke', '#111'); pole.setAttribute('stroke-width','2'); g.appendChild(pole);
+      const tri = document.createElementNS(NS,'polygon'); tri.setAttribute('points','0,-22 14,-18 0,-14'); tri.setAttribute('fill', color); g.appendChild(tri);
+      simCanvas.appendChild(g);
+    }
+
+    function circle(cx,cy,r,fill){ const c=document.createElementNS(NS,'circle'); c.setAttribute('cx',cx); c.setAttribute('cy',cy); c.setAttribute('r',r); c.setAttribute('fill',fill); return c; }
+
+    function createFigure(x, y, color) {
+      const g = document.createElementNS(NS,'g');
+      g.setAttribute('transform', `translate(${x}, ${y})`);
+      const head = document.createElementNS(NS,'circle'); head.setAttribute('cx','0'); head.setAttribute('cy','-20'); head.setAttribute('r','9'); head.setAttribute('fill', color);
+      const body = document.createElementNS(NS,'rect'); body.setAttribute('x','-5.5'); body.setAttribute('y','-10'); body.setAttribute('width','11'); body.setAttribute('height','22'); body.setAttribute('rx','4'); body.setAttribute('fill', color);
+      const legL = document.createElementNS(NS,'line'); legL.setAttribute('x1','-3'); legL.setAttribute('y1','12'); legL.setAttribute('x2','-6'); legL.setAttribute('y2','26'); legL.setAttribute('stroke', color); legL.setAttribute('stroke-width','4');
+      const legR = document.createElementNS(NS,'line'); legR.setAttribute('x1','3'); legR.setAttribute('y1','12'); legR.setAttribute('x2','6'); legR.setAttribute('y2','26'); legR.setAttribute('stroke', color); legR.setAttribute('stroke-width','4');
+      g.appendChild(head); g.appendChild(body); g.appendChild(legL); g.appendChild(legR);
+      return g;
+    }
+
+    // Botones estaciones
+    let busy = false, actionDone = false;
+    document.addEventListener('click', (e)=>{
+      const btn = e.target.closest('.qBtn');
+      if (!btn) return;
+      if (busy) return;
+      const st = Number(btn.dataset.stage);
+      const md = btn.classList.contains('success') ? 'success' : 'diff';
+      startStation(st, md);
+    });
+
+    // Botón aplicar apoyo
+    applySupport?.addEventListener('click', () => {
+      if (busy) return;
+      diffBar?.classList.add('hidden');
+      actionDone = false;
+      startStation(station, 'success');
+    });
+
+    function startStation(num, m) {
+      stopAnim(); busy = true; actionDone = false;
+      document.getElementById('successBar')?.classList.add('hidden');
+      diffBar?.classList.add('hidden');
+      path = []; idx = 0; px = 0; py = 0; throwT = 0; palmsT = 0; routeInit = false;
+      station = num; mode = m;
+
+      if (stageBadge) { stageBadge.textContent = `Estación ${station} · ${labelStation(station)}`; stageBadge.classList.remove('hidden'); }
+
+      runner?.setAttribute('opacity','1');
+
+      if (station === 1) { runner.setAttribute('transform','translate(120,160)'); }
+      if (station === 2) { runner.setAttribute('transform','translate(640,210)'); balls.forEach(b=>{b.setAttribute('cx','-50'); b.setAttribute('cy','-50');}); }
+      if (station === 3) { runner.setAttribute('transform','translate(880,560) scale(-1,1)'); }
+      if (station === 4) { runner.setAttribute('transform','translate(400,540)'); cone2G?.setAttribute('transform', 'translate(320,490)'); }
+      if (station === 5) { runner.setAttribute('transform','translate(440, 410)'); runner.setAttribute('opacity','0'); handL.setAttribute('cx','-100'); handR.setAttribute('cx','-100'); }
+
+      animate();
+    }
+
+    function labelStation(n){ return ({1:'Aros',2:'Lanzamiento',3:'Línea',4:'Conos',5:'Palmas'})[n] || ''; }
+
+    function showSuccess() {
+      const bar = document.getElementById('successBar');
+      const msgEl = document.getElementById('successMsg');
+      if (bar && msgEl) {
+        const names = {1:'Aros',2:'Lanzamiento',3:'Línea',4:'Conos',5:'Palmas'};
+        msgEl.textContent = `Éxito · Se logró correctamente la estación ${station} · ${names[station] || ''}`;
+        bar.classList.remove('hidden');
+      }
+    }
+    function showSupport(n) {
+      const supportText = document.getElementById('supportText');
+      if (diffBar && supportText) {
+        supportText.textContent = supports[n];
+        diffBar.classList.remove('hidden');
+      }
+    }
+
+    // Movimiento
+    let path = [];
+    let idx = 0;
+    let px = 0, py = 0;
+    let speed = 2.2;
+    let wobble = 0;
+    let routeInit = false;
+
+    function setPath(points, opts={}) {
+      path = points.slice();
+      idx = 1;
+      px = path[0].x; py = path[0].y;
+      speed = opts.speed || 2.2;
+      wobble = opts.wobble || 0;
+      runner.setAttribute('transform', `translate(${px}, ${py})`);
+    }
+
+    function stepPath() {
+      if (!path || path.length === 0) return true;
+      if (idx >= path.length) return true;
+      const tx = path[idx].x, ty = path[idx].y;
+      const dx = tx - px, dy = ty - py;
+      const dist = Math.hypot(dx, dy);
+      if (dist <= speed) { px = tx; py = ty; idx++; }
+      else { px += (dx / dist) * speed; py += (dy / dist) * speed; }
+      const wy = wobble ? (Math.sin((idx + px + py) * 0.12) * wobble) : 0;
+      runner.setAttribute('transform', `translate(${px}, ${py + wy})`);
+      return (idx >= path.length);
+    }
+
+    // Animación por estación
+    function animate(){
+      // AROS
+      if (station === 1) {
+        if (!routeInit) {
+          const base = [
+            {x:120,y:160},{x:150,y:160},{x:220,y:230},{x:290,y:160},{x:360,y:230},{x:400,y:230}
+          ];
+          if (mode === 'diff') {
+            const mix = [ base[0], base[1], base[2], {x:300,y:180}, base[3], base[4], base[5] ];
+            setPath(mix, {speed: 2.1, wobble: 0});
+            footMark.setAttribute('cx','300'); footMark.setAttribute('cy','180'); footMark.setAttribute('opacity','0');
+          } else { setPath(base, {speed: 2.4}); }
+          routeInit = true;
+        }
+        const done = stepPath();
+        if (mode==='diff') { footMark.setAttribute('opacity', (idx>=4 && idx<=5) ? '0.95' : '0'); }
+        if (done) { footMark.setAttribute('opacity','0'); stopAnim(); busy = false; mode === 'diff' ? showSupport(1) : showSuccess(); return; }
+      }
+
+      // LANZAMIENTO
+      if (station === 2) {
+        launchStep(mode === 'diff', () => { stopAnim(); busy = false; mode === 'diff' ? showSupport(2) : showSuccess(); });
+      }
+
+      // LÍNEA
+      if (station === 3) {
+        if (!routeInit) { setPath([{x:880,y:560},{x:620,y:560}], {speed: 2.2, wobble: mode==='diff'? 2.0 : 0}); routeInit = true; }
+        const done = stepPath();
+        if (done) { stopAnim(); busy = false; mode === 'diff' ? showSupport(3) : showSuccess(); return; }
+      }
+
+      // CONOS
+      if (station === 4) {
+        if (!routeInit) {
+          const base = [{x:400,y:540},{x:380,y:560},{x:320,y:490},{x:260,y:560},{x:200,y:490},{x:140,y:540},{x:120,y:540}];
+          setPath(base, {speed: 2.4, wobble: mode==='diff' ? 1.2 : 0});
+          coneFallen = false;
+          routeInit = true;
+        }
+        if (mode==='diff' && !coneFallen && cone2G) {
+          const near = Math.hypot(px-320, py-490) < 22;
+          if (near) {
+            cone2G.setAttribute('transform', `translate(320,490) rotate(80)`);
+            coneFallen = true;
+          }
+        }
+        const done = stepPath();
+        if (done) { stopAnim(); busy = false; mode === 'diff' ? showSupport(4) : showSuccess(); return; }
+      }
+
+      // PALMAS
+      if (station === 5) {
+        routeInit = true;
+        palmsStep(mode === 'diff', () => { stopAnim(); routeInit = false; busy = false; mode === 'diff' ? showSupport(5) : showSuccess(); });
+      }
+
+      rafId = requestAnimationFrame(animate);
+    }
+
+    // Lanzamiento (3 pelotas)
+    let throwT = 0;
+    function launchStep(hasMiss, onEnd){
+      if (actionDone) { stopAnim(); return; }
+      const starts = [{x:650,y:200},{x:650,y:200},{x:650,y:200}];
+      const targets = hasMiss ? [{x:850,y:190},{x:790,y:205},{x:850,y:190}] : [{x:850,y:190},{x:850,y:190},{x:850,y:190}];
+      const apexes = hasMiss ? [-140,-90,-140] : [-140,-140,-140];
+      const per = 78;
+      const idxThrow = Math.min(2, Math.floor(throwT / per));
+      const u = Math.min(1, (throwT - idxThrow*per) / per);
+
+      balls.forEach((b)=>{ b.setAttribute('cx','-50'); b.setAttribute('cy','-50'); });
+      for (let k = 0; k < idxThrow; k++) { balls[k].setAttribute('cx', targets[k].x); balls[k].setAttribute('cy', targets[k].y); }
+      const k = idxThrow;
+      const x = starts[k].x + (targets[k].x - starts[k].x)*u;
+      const y = starts[k].y + (targets[k].y - starts[k].y)*u + apexes[k]*u*(1-u)/100;
+      balls[k].setAttribute('cx', x); balls[k].setAttribute('cy', y);
+
+      throwT += 1;
+      if (throwT >= per*3) { throwT = 0; actionDone = true; stopAnim(); onEnd(); }
+    }
+
+    // Palmas
+    let palmsT = 0;
+    function palmsStep(desync, onEnd){
+      if (actionDone) { stopAnim(); return; }
+      const cycles = 3;
+      const per = 60;
+      const total = cycles * per;
+      const ct = palmsT % per;
+      let aL, aR, yL=350, yR=350;
+      if (desync) {
+        aL = Math.min(1, ct/(per*0.66));
+        aR = Math.max(0, (ct - per*0.35)/(per*0.8));
+        yL = 345 + Math.sin(ct*0.18)*8;
+        yR = 355 + Math.cos(ct*0.15)*10;
+      } else {
+        const up = ct <= per/2 ? (ct/(per/2)) : (1 - (ct - per/2)/(per/2));
+        aL = aR = up;
+      }
+      const xL = 470 + (500-470)*aL, xR = 530 - (530-500)*aR;
+      handL.setAttribute('cx', xL); handL.setAttribute('cy', yL);
+      handR.setAttribute('cx', xR); handR.setAttribute('cy', yR);
+      handL.setAttribute('fill','#0ea5e9'); handR.setAttribute('fill','#0ea5e9');
+
+      if (desync) {
+        let cross = document.getElementById('crossDiff');
+        if (!cross) {
+          cross = document.createElementNS(NS,'g'); cross.setAttribute('id','crossDiff');
+          const l1 = document.createElementNS(NS,'line'); l1.setAttribute('x1','490'); l1.setAttribute('y1','338'); l1.setAttribute('x2','510'); l1.setAttribute('y2','362');
+          const l2 = document.createElementNS(NS,'line'); l2.setAttribute('x1','510'); l2.setAttribute('y1','338'); l2.setAttribute('x2','490'); l2.setAttribute('y2','362');
+          [l1,l2].forEach(l=>{ l.setAttribute('stroke','#ef4444'); l.setAttribute('stroke-width','3'); l.setAttribute('stroke-linecap','round'); });
+          cross.appendChild(l1); cross.appendChild(l2); simCanvas.appendChild(cross);
+        }
+        const crossed = (xL > xR) || Math.abs(yL - yR) > 6;
+        document.getElementById('crossDiff').setAttribute('opacity', crossed ? (0.35 + 0.65*Math.abs(Math.sin(palmsT*0.2))) : '0');
+      }
+
+      palmsT += 1;
+      if (palmsT >= total) { palmsT = 0; actionDone = true; onEnd(); }
+    }
+  </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98062e97e16656ad',t:'MTc1ODA4NjcxNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
